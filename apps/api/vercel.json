@@ -10,12 +10,6 @@
       "destination": "/api"
     }
   ],
-  "functions": {
-    "api/**": {
-      "maxDuration": 10,
-      "memory": 256
-    }
-  },
   "headers": [
     {
       "source": "/(.*)",
