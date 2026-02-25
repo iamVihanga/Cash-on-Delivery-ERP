@@ -3,16 +3,5 @@
   "buildCommand": "bun run build:vercel",
   "outputDirectory": "dist",
   "installCommand": "bun install && bun run --filter core build",
-  "bunVersion": "1.x",
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, s-maxage=0, stale-while-revalidate=59"
-        }
-      ]
-    }
-  ]
+  "bunVersion": "1.x"
 }
