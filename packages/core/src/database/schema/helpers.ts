@@ -1,5 +1,5 @@
 import { sql } from "drizzle-orm";
-import { text, timestamp } from "drizzle-orm/pg-core";
+import { timestamp } from "drizzle-orm/pg-core";
 
 // ---------- Database Helpers ----------
 export const timestamps = {
@@ -8,5 +8,3 @@ export const timestamps = {
     .defaultNow()
     .$onUpdate(() => sql`CURRENT_TIMESTAMP`)
 };
-
-
